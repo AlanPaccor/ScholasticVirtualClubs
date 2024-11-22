@@ -20,16 +20,10 @@ import {
 export default function Sidebar() {
   return (
     <div className="w-64 bg-white shadow-md h-screen border-r border-gray-200">
-      <div className="p-4">
-        <Link href="/get-started" className="flex items-center text-blue-600 font-semibold">
-          <FaChartBar className="mr-2" />
-          Get Started
-        </Link>
-      </div>
       <nav className="mt-4">
       <ul>
         <SidebarItem href="/dashboard" icon={<FaHome />} text="Dashboard" active />
-        <SidebarItem href="/clubs" icon={<FaUsers />} text="Clubs" hasSubmenu />
+        <SidebarItem href="#" icon={<FaUsers />} text="My Clubs" hasSubmenu />
         <SidebarItem href="/events" icon={<FaCalendarAlt />} text="Events" />
         <SidebarItem href="/members" icon={<FaUserFriends />} text="Members" />
         <SidebarItem href="/resources" icon={<FaBook />} text="Resources" />
